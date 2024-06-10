@@ -3,7 +3,7 @@
 Для сервера оно обязательно!
 """
 import logging
-logging.basicConfig(level=logging.DEBUG, filename="../logs/server.log", filemode="w", format="%(asctime)s %(levelname)s %(message)s")
+logging.basicConfig(level=logging.DEBUG, filename="logs/server.log", filemode="w", format="%(asctime)s %(levelname)s %(message)s")
 
 
 """
@@ -57,8 +57,12 @@ def handle_readables(readables, server):
                 logging.warning("Получаем данные из буфера и парсим их")
                 res = str(resource.recv(1024), 'utf-8')
                 lines = res.splitlines()
-                json_data = lines[-1]
-                data = parse(json_data)
+                try:
+                    json_data = lines[-1]
+                    data = parse(json_data)
+                except Exception as e:
+                    print(e)
+                    data = list()
             except ConnectionResetError:
                 pass
 

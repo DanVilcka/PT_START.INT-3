@@ -1,7 +1,7 @@
 
 def CheckLocalFile(file_path, sinature):
     arr = []
-    with open(file_path, 'r') as fp:
+    with open(file_path) as fp:
         for l_no, line in enumerate(fp):
             if sinature in line:
                 arr.append([l_no + 1, line.index(sinature)])

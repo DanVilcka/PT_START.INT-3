@@ -1,3 +1,0 @@
-print(i)
-print(j)
-print(i)
