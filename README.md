@@ -31,6 +31,13 @@
 
 ```python3 client/client.py```
 
+## Пример
+#### На примере видно использование обоих функций и ответ сервера.
+!!! В примере используется файл test.txt его. Для корректной работы программы в проекте вам необходимо самостоятельно создать этот файл!!!
 
-<video src='https://youtu.be/gi8hmI9l5TE' width=180/> 
-[![Watch the video]](https://youtu.be/gi8hmI9l5TE)
+Также обратите внимание на то, что на вход функция CheckLocalFile получает байты через пробелы. 
+
+Приятного пользования!
+
+[<img src="https://img.youtube.com/vi/GTbe5KKKFiQ/hqdefault.jpg" width="600" height="300"
+/>](https://www.youtube.com/embed/GTbe5KKKFiQ)

@@ -29,7 +29,6 @@ def str_split(string):
         bytes_array = bytes(map(int, string.split()))
     except:
         bytes_array = string.encode('utf-8')
-        print('Вы ввели неправильный формат, возможно получиться его обработать!')
     return bytes_array.decode('utf-8')
 
 
